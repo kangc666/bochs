@@ -22,6 +22,12 @@ jobs:
       
 
             sudo apt-get install openjdk-8-jdk
+            
+            mkdir ~/Android/android-sdk
+            wget -c http://dl.google.com/android/ndk/android-ndk64-r10b-linux-x86_64.tar.bz2
+            sudo tar -C ~/Android/android-sdk -xvf android-ndk64-r10b-linux-x86_64.tar.bz2
+
+
 
             export ANDROID_HOME=~/Android/android-sdk
 
