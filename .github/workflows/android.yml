@@ -21,38 +21,38 @@ jobs:
       run: |
       
 
-sudo apt-get install openjdk-8-jdk
+            sudo apt-get install openjdk-8-jdk
 
-export ANDROID_HOME=~/Android/android-sdk
+            export ANDROID_HOME=~/Android/android-sdk
 
-export ANDROID_NDK_HOME=~/Android/Sdk/ndk-bundle
+            export ANDROID_NDK_HOME=~/Android/Sdk/ndk-bundle
 
-export PATH=$ANDROID_NDK_HOME:$ANDROID_HOME/tools:$PATH
+            export PATH=$ANDROID_NDK_HOME:$ANDROID_HOME/tools:$PATH
 
-export PATH=$ANDROID_HOME/build-tools/25.0.2:$PATH
+            export PATH=$ANDROID_HOME/build-tools/25.0.2:$PATH
 
-# Commands:
+            # Commands:
 
-sudo apt-get install ant //If you install manually - set envirnoment value to Ant
+            sudo apt-get install ant //If you install manually - set envirnoment value to Ant
 
-sudo apt-get install make
+            sudo apt-get install make
 
-sudo apt-get install g++
+            sudo apt-get install g++
 
-sudo apt-get install git-core
+            sudo apt-get install git-core
 
-#Download required repos from GitHub (both repos must be downloaded in same folder):
+             #Download required repos from GitHub (both repos must be downloaded in same folder):
 
-git clone git://github.com/pelya/commandergenius androidsdl
+             git clone git://github.com/pelya/commandergenius androidsdl
 
-git clone git://github.com/lubomyr/bochs
+             git clone git://github.com/lubomyr/bochs
 
-#build
+             #build
 
-cd bochs/build/android
+              cd bochs/build/android
 
-./build-all.sh   #// for build all project
+             ./build-all.sh   #// for build all project
 
-./build-core.sh #// for build core
+             ./build-core.sh #// for build core
 
-./build-ui.sh   #// for build ui (when core built)
+             ./build-ui.sh   #// for build ui (when core built)
