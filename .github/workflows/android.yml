@@ -46,13 +46,8 @@ jobs:
              git clone git://github.com/pelya/commandergenius androidsdl
 
              git clone git://github.com/lubomyr/bochs
-
+             
              #build
-
-              cd bochs/build/android
-
-             ./build-all.sh   #// for build all project
-
-             ./build-core.sh #// for build core
-
-             ./build-ui.sh   #// for build ui (when core built)
+             cd bochs/build/android
+              ./build-all.sh  
+              ls -l
