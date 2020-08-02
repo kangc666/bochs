@@ -19,7 +19,13 @@ jobs:
         java-version: 1.8
     - name: make
       run: |
-      
+            # github云编译 安装ndk
+            cd /home
+            mkdir ndk
+            wget -c http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
+            sudo ./android-ndk-r10e-linux-x86_64.bin
+            export ANDROID_NDK=/home/ndk/android-ndk-r10e
+            export PATH=$ANDROID_NDK:$PATH
 
             sudo apt-get install openjdk-8-jdk
           
