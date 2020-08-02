@@ -21,7 +21,7 @@ jobs:
       run: |
             # github云编译 安装ndk
             cd /home
-            mkdir ndk
+            sudo mkdir ndk
             wget -c http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
             sudo ./android-ndk-r10e-linux-x86_64.bin
             export ANDROID_NDK=/home/ndk/android-ndk-r10e
