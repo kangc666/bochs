@@ -33,7 +33,7 @@ jobs:
 
             # Commands:
 
-            sudo apt-get install ant //If you install manually - set envirnoment value to Ant
+            sudo apt-get install ant #//If you install manually - set envirnoment value to Ant
 
             sudo apt-get install make
 
