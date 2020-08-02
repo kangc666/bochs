@@ -25,8 +25,10 @@ jobs:
             sudo chmod -R 777 ndk
             cd ndk
             wget -c http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
-            #sudo chmod 777 android-ndk-r10e-linux-x86_64.bin
+            sudo chmod 777 android-ndk-r10e-linux-x86_64.bin
             ./android-ndk-r10e-linux-x86_64.bin
+            echo "列出文件"
+            ls -l
             export ANDROID_NDK=/home/ndk/android-ndk-r10e
             export PATH=$ANDROID_NDK:$PATH
 
