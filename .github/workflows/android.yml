@@ -19,11 +19,7 @@ jobs:
       with:
         java-version: 1.8
         
-    - name: Cache Data
-      uses: actions/cache@v1
-      #env:
-        #ndk: android-ndk-r12b
-        #sdk-tools: 4333796
+    
       
     - name: make
       run: |
