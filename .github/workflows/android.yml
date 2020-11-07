@@ -44,6 +44,17 @@ jobs:
              cd bochs/build/android
               ./build-all.sh  
               ls -l
-              ndk-build
+              echo done!
+    - name: Upload result for job 1
+
+      uses: actions/upload-artifact@v1
+
+      with:
+
+          name: debug.apk
+
+          path: bochs-debug.apk
+
+          
 
 
