@@ -21,8 +21,8 @@ jobs:
         
     - name: Cache Data
       uses: actions/cache@v1
-      env:
-        ndk: android-ndk-r12b
+      #env:
+        #ndk: android-ndk-r12b
         #sdk-tools: 4333796
       
     - name: make
