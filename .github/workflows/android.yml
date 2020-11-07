@@ -53,7 +53,7 @@ jobs:
 
           name: debug.apk
 
-          path: bochs-debug.apk
+          path: bochs/build/android/bochs-debug.apk
 
           
 
