@@ -40,7 +40,7 @@ jobs:
 
              git clone git://github.com/lubomyr/bochs
              
-             #build
+             #build 
              cd bochs/build/android
               ./build-all.sh  
               ls -l
