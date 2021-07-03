@@ -55,7 +55,14 @@ jobs:
 
           path: bochs/build/android/bochs-debug.apk
         #By:KANG
+        
+    - name: Upload WorkPlace
 
-          
+      uses: actions/upload-artifact@v1
 
+      with:
+
+          name: WorkPlace
+
+          path: /home/runner/work/bochs/
 
