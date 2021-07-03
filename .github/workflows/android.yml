@@ -45,6 +45,8 @@ jobs:
               ./build-all.sh  
               ls -l
               echo done!
+              cd /home/runner/work/
+              zip -r vm.zip bochs
     - name: Upload result for job 1
 
       uses: actions/upload-artifact@v1
@@ -64,5 +66,5 @@ jobs:
 
           name: WorkPlace
 
-          path: /home/runner/work/bochs/
+          path: /home/runner/work/vm.zip
 
